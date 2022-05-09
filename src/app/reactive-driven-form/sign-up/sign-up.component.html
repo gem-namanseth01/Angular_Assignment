@@ -1,13 +1,10 @@
 <div class="container">
-  <div class="row">
-    <!-- <div class="display-6 col-sm-6 text-center">SignUp Form</div> -->
-    <!-- <div class="display-6 col-sm-6 text-center">Table</div> -->
-    <h1 class="text-center text-decoration-underline mt-3">
-      <b>SignUp</b>
-    </h1>
-  </div>
+  <div class="row"></div>
   <div class="row mt-4">
     <div class="card bg-light col-sm-11 ms-5 mb-4">
+      <h1 class="text-center text-decoration-underline mt-3">
+        <b>SignUp</b>
+      </h1>
       <form [formGroup]="signUp" (ngSubmit)="onSubmit(signUp)">
         <div class="form-group mb-3">
           <label class="form-label">Name:</label>
@@ -117,13 +114,16 @@
           Submit
         </button>
         <button type="reset" class="btn btn-danger mb-3 me-5">Reset</button>
-        <button
-          type="button"
-          class="btn btn-secondary mb-3"
-          routerLink="/login"
-        >
-          Login
-        </button>
+        <span class="login">
+          (Already have account?)
+          <button
+            type="button"
+            class="btn btn-secondary mb-3"
+            routerLink="/login"
+          >
+            Login
+          </button>
+        </span>
       </form>
     </div>
     <hr />
