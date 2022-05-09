@@ -198,13 +198,13 @@
         </thead>
         <tbody>
           <tr *ngFor="let unit of inputs; index as idx">
-            <th scope="row">{{ idx + 1 }}.</th>
-            <td scope="row">{{ unit.name }}</td>
-            <td scope="row">{{ unit.college }}</td>
-            <td scope="row">{{ unit.cgpa }}</td>
-            <td scope="row">{{ unit.yearOfPassing | date }}</td>
-            <td scope="row">{{ unit.dateOfEnrollment | date }}</td>
-            <td scope="row">{{ unit.skill }}</td>
+            <th>{{ idx + 1 }}.</th>
+            <td>{{ unit.name }}</td>
+            <td>{{ unit.college }}</td>
+            <td>{{ unit.cgpa }}</td>
+            <td>{{ unit.yearOfPassing | date }}</td>
+            <td>{{ unit.dateOfEnrollment | date }}</td>
+            <td>{{ unit.skill }}</td>
           </tr>
         </tbody>
       </table>
